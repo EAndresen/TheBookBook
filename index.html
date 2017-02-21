@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TheBookBook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/unsemantic-grid-responsive-tablet.css" />
+</head>
+<body>
+<div class="grid-container main_div" >
+    <header class="grid-90 prefix-5 suffix-5 tablet-grid-90 prefix-5 suffix-5 mobile-grid-100">
+        <h1 class="headerFont">The BookBook</h1>
+    </header>
+<nav class="nav_list grid-90 prefix-5 suffix-5 tablet-grid-90 prefix-5 suffix-5 mobile-grid-100">
+    <ul>
+        <li><a href="fantasy.html">Fantasy</a> </li>
+        <li><a href="si-fi.html">Sci-Fi</a> </li>
+        <li><a href="poem.html">Poem</a> </li>
+        <li><a href="bookofhtemonth.html">BotM</a> </li>
+    </ul>
+</nav>
+<section class="grid-90 prefix-5 suffix-5 tablet-grid-90 prefix-5 suffix-5 mobile-grid-100 grid-parent">
+    <section class="grid-70 mobile-grid-100 tablet-grid-70">
+        <article class="grid-100 mobile-grid-100 tablet-grid-100 ">
+            <h2>Book</h2>
+            <p>A book is a set of written, printed, illustrated, or blank sheets, made of paper, parchment, or other materials, fastened together to hinge at one side, with text and/or images printed in ink. A single sheet within a book is a leaf, and each side of a leaf is a page. A set of text-filled or illustrated pages produced in electronic format is known as an electronic book, or e-book.</p>
+            <p>Books may also refer to works of literature, or a main division of such a work. In library and information science, a book is called a monograph, to distinguish it from serial periodicals such as magazines, journals, or newspapers. The body of all written works including books is literature. In novels and sometimes other types of books (for example, biographies), a book may be divided into several large sections, also called books (Book 1, Book 2, Book 3, and so on). An avid reader of books is a bibliophile or colloquially, "bookworm".</p>
+            <p>A shop where books are bought and sold is a bookshop or bookstore. Books can also be borrowed from libraries. Google has estimated that as of 2010, approximately 130,000,000 distinct titles had been published. In some wealthier nations, printed books are giving way to the usage of electronic or e-books, though sales of e-books declined in the first half of 2015.</p>
+        </article>
+        <article class="grid-100 mobile-grid-100 tablet-grid-100">
+            <h2>Literary genre</h2>
+            <p>A literary genre is a category of literary composition. Genres may be determined by literary technique, tone, content, or even (as in the case of fiction) length. The distinctions between genres and categories are flexible and loosely defined, often with subgroups.</p>
+            <p>The most general genres in literature are (in loose chronological order) epic, tragedy,[1] comedy, and creative nonfiction.[citation needed] They can all be in the form of prose or poetry. Additionally, a genre such as satire, allegory or pastoral might appear in any of the above, not only as a subgenre (see below), but as a mixture of genres. Finally, they are defined by the general cultural movement of the historical period in which they were composed.</p>
+            <p>Genre should not be confused with age categories, by which literature may be classified as either adult, young adult, or children's. They also must not be confused with format, such as graphic novel or picture book.</p>
+        </article>
+    </section>
+
+    <aside class="grid-30 hide-on-mobile tablet-grid-30">
+        <a href="bookofhtemonth.html">
+        <article class="mobile-grid-100 grid-100 tablet-grid-100">
+            <h2 class="book_of_the_month">Book of the month</h2>
+            <h3>The Dwarves</h3>
+            <img src="img/dvarves.jpg" alt="Dwarves book cover" class="sider_img"/>
+            <p>The Dwarves (German: Die Zwerge) is the first novel in the titular high fantasy series, The Dwarves, by German fantasy author Markus Heitz.</p>
+        </article>
+        </a>
+        <form action="newsletter.html"  id="newsletterDesktop">
+            <fieldset>
+                <legend>Newsletter</legend>
+                    <input type="text" name="name" id="inputName" placeholder="Name:">
+                    <input type="email" name="email" id="inputEmail" placeholder="Email:"><br/>
+                    <input type="radio" name="choice" value="Week" id="weeklySubscription">Weekly
+                    <input type="radio" name="choice" value="Month" id="monthlySubscription">Monthly<br/>
+                    <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </aside>
+</section>
+
+<section class="hide-on-desktop hide-on-tablet mobile-grid-100 grid-parent">
+    <a href="bookofhtemonth.html">
+    <article class="mobile-grid-90 bookArticle">
+        <h2 class="book_of_the_month">Book of the month</h2>
+         <h3>The Dwarves</h3>
+         <img src="img/dvarves.jpg" alt="Dwarves book cover" class="sider_img"/>
+        <p>The Dwarves (German: Die Zwerge) is the first novel in the titular high fantasy series, The Dwarves, by German fantasy author Markus Heitz. The story follows an orphan dwarf by the name of Tungdil Goldhand, raised by humans. The book was originally written in English and German. A video game named The Dwarves made by King Art Games was leaked by the German gaming online magazine Hooked is based on the first book, which will be funded through Kickstarter. The leak has been confirmed by the publisher EuroVideo.</p>
+    </article>
+    </a>
+</section>
+    <section class="hide-on-desktop hide-on-tablet mobile-grid-100 grid-parent">
+        <form action="newsletter.html" class="newsletter"  id="newsletterMobile">
+            <fieldset>
+                <legend>Newsletter</legend>
+                <input type="text" name="name" id="inputNameMobile" placeholder="Name:">
+                <input type="email" name="email" id="inputEmailMobile" placeholder="Email:"><br/>
+                <input type="radio" name="choice" value="Week" id="weeklySubscriptionMobile">Weekly
+                <input type="radio" name="choice" value="Month" id="monthlySubscriptionMobile">Monthly<br/>
+                <input type="submit" value="Submit" id="submitMobile">
+            </fieldset>
+        </form>
+    </section>
+<footer class="grid-90 prefix-5 suffix-5 tablet-grid-90 prefix-5 suffix-5 mobile-grid-100">
+        <p id="footerP">Eric Andresen ©</p>
+</footer>
+</div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
